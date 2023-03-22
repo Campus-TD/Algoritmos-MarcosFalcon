@@ -44,6 +44,7 @@ public class Listas {
                 case "14" -> lista.mostrarUSUN();
                 case "15" -> lista.mostrarUSASC();
                 case "16" -> lista.EliminarUSUN();
+                case "17" -> lista.ElimiarUSASC();
             }
         }while(!op.equals("11"));
     }
