@@ -232,7 +232,25 @@ public class Lista {
     }
     
     public void ElimiarUSASC(){
-        
+        Nodo aux = this.Raiz;
+        Nodo aux2 = null;
+        boolean ck = true;
+        int i = 0, j = 2;
+        while(aux != null){
+            if(ck){
+                aux2.siguiente = aux.siguiente;
+                ck = false;
+            }
+            if(i == j){
+                ck = true;
+                j++;
+                i = 0;
+            }else{
+                i++; 
+            }
+            aux2 = aux;
+            aux = aux.siguiente;
+        }
     }
     
     public void afueraDentro(){
